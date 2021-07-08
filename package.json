@@ -1,0 +1,26 @@
+{
+  "name": "nart",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "NART is a combination of my name Nana + Art. This is an ecommerce site to sell my digital art drawn on the Samsung app PENUP.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17nkwon/Nart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/17nkwon/Nart/issues"
+  },
+  "homepage": "https://github.com/17nkwon/Nart#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  }
+}
