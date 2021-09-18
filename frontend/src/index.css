@@ -104,9 +104,8 @@ header a { /* for links in header */
 
 a.brand {
   color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: Blippo, fantasy;
+  font-size: 4rem;
+  font-family: Impact, sans-serif;
 }
 
 .row { /* put items in row next to each other */
@@ -174,4 +173,21 @@ img.large {
 
 .rating span:last-child {
   color: black
+}
+
+/* Alert */
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem
+}
+
+.alert-info {
+  color: blue;
+  background-color: white;
+}
+
+.alert-danger {
+  color: darkred;
+  background-color: pink;
 }
