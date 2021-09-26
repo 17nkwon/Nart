@@ -15,5 +15,7 @@ export const addToCart = (productId) => async (dispatch, getState) => {
             price: data.price,
             product: data.id
         }
-    })
+    });
+    // prevent refreshing from resetting cart
+    localStorage.setItem('cartItems', JSON.stringify(getState().cart.cartItems));
 }

@@ -108,6 +108,15 @@ a.brand {
   font-family: Impact, sans-serif;
 }
 
+.badge {
+  background-color: peachpuff;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2 rem;
+}
+
 .row { /* put items in row next to each other */
   display: flex;
   flex-wrap: wrap;
