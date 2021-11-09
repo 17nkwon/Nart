@@ -1,9 +1,17 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
+dotenv.config();
+
 const app = express();
+
+// parse the body of HTTP requests
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // connect accepts two parameters: address of mongoose database and the options
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/nart', {
     // gets rid of duplicated warnings
